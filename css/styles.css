@@ -1,0 +1,327 @@
+body {
+  margin: 0;
+  padding: 0;
+
+
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+
+  font-family:Roboto,Arial,sans-serif;
+}
+
+
+h2 {
+}
+
+a {
+  color: white;
+}
+
+hr {
+  border-color: gray;
+  background-color: gray;
+  height: 1px;
+  border: 0;
+}
+
+p {
+  font-size: 12px;
+}
+
+#bg {
+  /*background-color: white;*/
+  /* Location of the image */
+  /*http://revelwallpapers.net/d/33706839716E5F64764E48646A6F4A756C33324B334D2D36743879615A773D3D/dark-street-market-background.jpg*/
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /*opacity: 50%;*/
+}
+
+#bg:before {
+    content:"";
+    display:block;
+    position:fixed;
+    width:100%;
+    height:100%;
+    /*opacity: 50%;*/
+    left:0;
+    top:0;
+    z-index:-1;
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    background-image: url(../images/provo2.jpg);
+
+    background-position: center center;
+
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+
+    /* Background image is fixed in the viewport so that it doesn't move when
+       the content's height is greater than the image's height */
+    background-attachment: fixed;
+
+    /* This is what makes the background image rescale based
+       on the container's size */
+    background-size: cover;
+
+    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: gray;
+    filter: grayscale(100%);
+
+    opacity: 0.2;
+}
+
+
+#container {
+  text-align: center;
+  /*background-color: #eeeeee;*/
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#searchBar {
+  padding-top: 5px;
+  /*padding-bottom: 5px;*/
+  padding-left: 125px;
+  color: lightgray;
+  /*background-color: white;*/
+  font-weight:200;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: regular;
+  text-align: center;
+  color: #d9d9d9;
+}
+
+#searchContainer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 314px;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 2px 0px 6px grey;
+
+}
+
+#search {
+  border: 1px solid #eeeeee;
+  border-right: none;
+  font-size: 20px;
+  padding: 10px;
+  outline: none;
+  width: 250px;
+  font-weight: bold;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  /*text-align: center;*/
+  font-family: Roboto, Arial, sans-serif;
+  /*font-weight: lighter;*/
+}
+
+/*#searchLine {
+  width: 350px;
+  height: 48px;
+}*/
+
+#searchBtn {
+  /*border: 1px solid #eeeeee;*/
+  font-size: 20px;
+  /*padding: 10px;*/
+  background: #ededed;
+  background: linear-gradient(#ffffff, #ededed);
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-family: Roboto, Arial, sans-serif;
+  margin-bottom: 0px;
+}
+
+#searchBtn:hover {
+  background: #ffffff;
+  background: linear-gradient(#ededed, #ffffff);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #d9d9d9;
+  font-weight: lighter;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fafafa;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fafafa;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #fafafa;
+}
+
+#houseIndicator {
+  margin-left: auto;
+  margin-right: auto;
+  color: #4a4a4a;
+  font-size: 26px;
+}
+
+#realometer {
+  clear: both;
+  background-color: #EEEEEF;
+  padding: 0px;
+  width: 800px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 2px 0px 6px grey;
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #FF0000, #f6f6f6, #0062ff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #FF0000, #f6f6f6, #0062ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #FF0000, #f6f6f6, #0062ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #FF0000, #f6f6f6, #0062ff); /* Standard syntax */
+
+}
+
+#USA {
+  width: 800px;
+  clear: both;
+  padding-top: 100px;
+}
+
+#indicatorUSA {
+  height: 3px;
+}
+
+#adsContainer {
+  width: 650px;
+  height: 300px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#extraNotes {
+  font: Helvetica;
+  font-weight: lighter;
+  float: left;
+  /*margin: 20px;*/
+  color: white;
+  line-height: 50%;
+  margin-left: 40px;
+  margin-top: 100px;
+  /*padding-left: 100px;*/
+  text-shadow: 0px 0px 2px black;
+}
+
+#realtorForm {
+  padding: 25px;
+  /*background-color: white;*/
+  float: right;
+  width: 300px;
+  height: 250px;
+  /*margin-right: 100px;*/
+}
+
+#footer {
+  clear: both;
+  /*background-color: #4a4a4a;*/
+  color: gray;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  padding-left: 5px;
+  font-size: 10px;
+  margin-top: 40px;
+}
+
+#header {
+  padding-top: 50px;
+  color: #333333;
+  /*text-shadow: 1px 1px 2px black;*/
+  /*font-weight: lighter;*/
+  line-height: 50%;
+  margin-bottom: 130px;
+  font-size: 12px;
+  /*background-color: black;*/
+}
+
+#SimpleUSA {
+  margin-top: 120px;
+  padding-bottom: 70px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+  border-width: thin;
+  clear: both;
+  line-height: 20%;
+  color: white;
+  font-weight: lighter;
+}
+
+#flag {
+  float: left;
+  padding-top: 7px;
+  /*padding-bottom: 5px;*/
+}
+
+#USAscores {
+  float: right;
+  font-size: 8px;
+  /*margin-top: 6px;*/
+  padding-right: 15px;
+}
+
+.lightGray {
+  color: lightGray;
+  font-size: 9px;
+}
+
+.darkBackground {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 5px;
+}

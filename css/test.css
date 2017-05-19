@@ -1,0 +1,60 @@
+.Widget {
+  margin: 10px auto;
+  width: 300px;
+  font-family: Arial;
+  border-radius: 3px;
+  border: solid #84c536 1px;
+}
+
+.Widget__header {
+  text-align: center;
+  background: #84c536;
+}
+
+.Widget__menu {
+  background: #333;
+}
+
+.Widget__nav {
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  list-style: none;
+}
+
+.Widget__link {
+  display: inline-block;
+}
+
+.Widget__link:last-child {
+  margin-right: 0px;
+}
+.Widget__link:first-child {
+  margin-left: 0px;
+}
+
+.Widget__link > a {
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.Widget__link > a:hover {
+  background: #666;
+}
+
+.Widget__content {
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.Widget__footer {
+  margin: 0px 10px 10px 10px;
+  padding: 10px 0px 0px 0px;
+  color: #ccc;
+  font-size: 12px;
+  text-align: center;
+  border-top: solid #ccc 1px;
+}
