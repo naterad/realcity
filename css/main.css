@@ -2,27 +2,35 @@ body {
   margin: 0;
   padding: 0;
   font-family:Roboto,Arial,sans-serif;
-  /*background-image: url(../images/provo2.jpg);*/
+  background-image: url(../images/dallas-skyline-grey.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #ccc;
+  /*background-color: #ccc;*/
 }
 p {
-  font-size: 12px;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
-
+.bold_p {
+  font-size: 16px;
+  font-weight: bold;
+}
 .main_logo {
-  width:95%;
-  max-width: 263px;
-  height: 100px;
+  /*width:95%;
+  max-width: 263px;*/
+  /*height: 100px;*/
+  /*margin: auto;
+  margin-top: 10%;*/
+  max-width: 125px;
+  height: 70px;
+  margin-left: 10px;
   background-image: url(../images/RealCityLogo@4x-8.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  margin: auto;
-  margin-top: 10%;
 }
 .top_container {
   text-align: center;
